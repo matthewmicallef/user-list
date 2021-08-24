@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        background: #0078d7;
+
+        &-title {
+            color: white;
+            margin: $margin auto 0;
+            text-align: center;
+        }
+    }
+
+    &__navbar {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+
+        &-menu-item {
+            margin-right: 1em;
+            color: white;
+            text-decoration: none;
+            padding: $margin 1em;
+
+             &.active,
+             &:hover {
+                 background-color: rgba(255, 255, 255, 0.2);
+                 border-radius: 5px;
+             }
+        }
+    }
+
+    &__main-content {
+        padding: 1em;
+    }
+}

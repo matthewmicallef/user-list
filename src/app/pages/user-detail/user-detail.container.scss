@@ -1,0 +1,8 @@
+@import '../../variables.scss';
+
+.user-detail-container {
+    &__back {
+        display: block;
+        margin: $margin 0;
+    }
+}

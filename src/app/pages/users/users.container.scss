@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.user {
+    &-container {
+        &__title,
+        &--loading {
+            text-align: center;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            &-item {
+                min-width: 18em;
+                margin: $margin*2;
+                padding: $padding;
+                border-radius: $border-radius/2;
+                background-color: rgba($primary-color, 0.1);
+                box-shadow: 2px 2px 2px gray;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba($primary-color, 0.3);
+                }
+    
+                &-id {
+                    padding: 0.4em 0.8em;
+                    margin-right: $margin;
+                    border-radius: 30%;
+                    color: white;
+                    background-color: rgba($primary-color, 0.9);
+                }
+            }
+        }
+    }
+}
